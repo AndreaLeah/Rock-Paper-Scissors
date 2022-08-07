@@ -1,0 +1,13 @@
+lessons learned from building this:
+
+1. Cannot assign a variable to a fxn w/ the same names:
+
+    ex 1: let getScore = getScore(); XXXXX (doesn't work)
+   
+    ex 2: let score = getScore(); *** (this is functional)
+
+2. When assigning a variable to a fxn, the fxn gets called/executed on that line/in that instance. (basically anything to the right of the "=" gets initialized when setting a variable)
+
+    ex: let score = getScore(); --- getScore() fxn gets called then & there
+    
+    reference ex: let answer = prompt("How are you?"); --- this prompt gets triggered.  
